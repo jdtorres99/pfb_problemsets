@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+import sys
+if sys.argv[1] > 30:
+	print("Yes, the input is greater than 30")
+else:
+	print("No, input is not greater than 30")
