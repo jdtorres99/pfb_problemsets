@@ -4,6 +4,8 @@ if alpha > 0:
 	print("The number is positive")
 	if alpha < 50:
 		print("The number is smaller than 50")
+		if alpha%2 == 0:
+			print("The number is even")
 elif alpha < 0:
 	print("The number is negative")
 else:
