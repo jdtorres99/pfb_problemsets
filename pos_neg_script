@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
-alpha = 99
+alpha = 97
 if alpha > 0: 
 	print("The number is positive")
 	if alpha < 50:
-		print("The number is smaller than 50")
 		if alpha%2 == 0:
-			print("The number is even")
-	else: 
+			print("The number is less than 50 and even")
+		else:
+			print("The number is less than 50 and odd")
+	elif alpha > 50: 
 		if alpha%3 == 0:
 			print("The number is larger than 50 and divisible by 3")
+		else:
+			print("The number is larger than 50 but not divisible by 3")
+	else:
+		print("The number is 50")
 elif alpha < 0:
 	print("The number is negative")
 else:
