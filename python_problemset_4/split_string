@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+taxa = "sapiens, erectus, neanderthalensis"
+print(taxa)
+print(taxa[1]) #This prints out 'a' which is the 2nd character of this string. This is not a list.
+print(type(taxa)) #Taxa is a string.
+species = taxa.split(', ')#This should be telling python to split taxa into a list whenever it sees a ', '
+print(species)
+print(species[1]) #species is a list so now indexing at position 1 returns 'erectus'
+print(type(species)) #species is a list.
+print(sorted(species)) #sorts the list in alphabetical order
+print(sorted(species, key=len,reverse=1))#reverse=True is also acceptable (or any true things in python)
