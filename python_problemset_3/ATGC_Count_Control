@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+dna = 'ATTGGGCCCC'
+A_count = dna.count('A')
+T_count = dna.count('T')
+G_count = dna.count('G')
+C_count = dna.count('C')
+stringA = f'The number of A nucleotides is {A_count}'
+stringT = f'The number of T nucleotides is {T_count}'
+stringG = f'The number of G nucleotides is {G_count}'
+stringC = f'The number of C nucleotides is {C_count}'
+print(stringA)
+print(stringT)
+print(stringG)
+print(stringC)
