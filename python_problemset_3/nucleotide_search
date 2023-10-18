@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+dna = 'ATGCGTACGAT'
+starting_nuc = dna[0]
+x = len(dna)
+ending_nuc = dna[x-1]
+print(f'EcoRI startPos: {starting_nuc}',f'endPos: {ending_nuc}')
