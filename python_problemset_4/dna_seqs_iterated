@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+dna_seqs = ['ATGCCCGGCCCGGC', 'GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT', 'ATGGGCCC']
+for dna in dna_seqs:
+#	print(dna_seqs.index(dna), len(dna), dna, sep = '\t')
+	print(f'{dna_seqs.index(dna)}\t{len(dna)}\t{dna}\t') #alternative method for printing out the result including \t in the print function itself.

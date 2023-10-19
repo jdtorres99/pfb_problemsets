@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+nums = [101,2,15,22,95,33,2,27,72,15,52]
+nums_sorted = sorted(nums)
+#print(nums_sorted)
+nums_it = iter(nums_sorted) #The for loop works exactly the same without the iter function
+evens = []
+odds = []
+for i in nums_it:
+	if i%2 == 0:
+		evens.append(i)
+	else:
+		odds.append(i)
+#print(f'Evens: {evens}')
+#print(f'Odds: {odds}')
+evens_index = []
+y = 0
+for i in evens:
+	evens_index.append(y)
+	y+=1
+#print(f'Evens Index: {evens_index}')
+for i in evens_index:
+	if i == 0:
+		k = i+1
+		sum_evens = evens[i]+evens[k]
+		i+=1
+	elif i == len(evens_index)-1:
+		break
+	elif i < len(evens_index):
+		k = i+1
+		sum_evens = sum_evens + evens[k]
+		i+=1
+print(f'Sum of even numbers: {sum_evens}')
+odds_index = []
+y = 0
+for i in odds:
+	odds_index.append(y)
+	y+=1
+#print(f'Odds Index: {odds_index}')
+for i in odds_index:
+  if i == 0:
+    k = i+1 
+    sum_odds = odds[i]+odds[k]
+    i+=1
+  elif i == len(odds_index)-1:
+    break
+  elif i < len(odds_index):
+    k = i+1 
+    sum_odds = sum_odds + odds[k]
+    i+=1
+print(f'Sum of odd numbers: {sum_odds}')

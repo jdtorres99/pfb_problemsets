@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+i = 1
+while i <= 1000:
+#1st iteration: i = 1, so it goes to 'if' statement. n = 2 and prod = 2. Afterwards, i = 2.
+#2nd iteration: i = 2, so it goes to 'elif i < 1000:' statement. n = 3 and prod = 6. Afterwards, i = 3.
+#3rd iteration: i = 3, so it goes to 'elif i < 1000:' statement. n = 4 and prod = 24. Afterwards, i = 4.
+#4th iteration: i = 4, so it goes to 'elif i < 1000:' statement. n = 5 and prod = 120. Afterwards, i = 5.
+#...
+#1000th iteration: i = 1000, so it goes to 'elif i == 1000:' statement. Loop then breaks.
+	if i == 1:
+		n = i+1
+		prod = i*n
+#1st iteration is unique. We must establish the prod variable. 
+		i+=1
+	elif i == 1000:
+		print(prod)		
+		print("Done")
+		break	
+	elif i < 1000:
+		n = i+1
+		prod = prod*n
+		i+=1
+#Iterations 2-999 are all the same. Now the prod variable must change between iterations and it relies on it already being established before the iteration starts. Hence, why I included an if statement where i == 1. 

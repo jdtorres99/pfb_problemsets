@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+x = range(1,101)
+myrange = [print(i) for i in x]
+#for i in x:
+#	print(i) 

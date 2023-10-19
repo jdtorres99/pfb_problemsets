@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+dna_seqs = ['ATGCCCGGCCCGGC', 'GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT', 'ATGGGCCC']
+dna_tuple_list = []
+for i in dna_seqs:
+	tuple_insert = (len(i),i)
+	dna_tuple_list.append(tuple_insert)
+print(dna_tuple_list, sep = '')	 
