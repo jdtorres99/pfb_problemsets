@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+import sys
+fav_dict = {'activity':'sketching','movie':'Iron Giant','organism':'bearded dragons'}
+#print(fav_dict)
+fav_dict['organism'] = 'dogs'
+fav_thing = sys.argv[1]
+print(fav_dict[fav_thing])

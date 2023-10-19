@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+dict_favthings = {}
+dict_favthings['activity'] = 'sketching'
+dict_favthings['movie'] = 'Iron Giant'
+dict_favthings['song'] = 'Viva la vida'
+#print(dict_favthings) 
+#fav_song = dict_favthings['song']
+#print(f'My favorite song is {fav_song}')
+#fav_thing = 'movie' #Storing a key into a variable will indirectly call the key through the variable when the dictionary is indexed.
+#print(dict_favthings[fav_thing])
+#print(dict_favthings['activity'])
+dict_favthings['organism'] = 'bearded dragons'
+#print(dict_favthings['organism'])
+#fav_thing = 'organism'
+#print(fav_thing)
+#print(dict_favthings[fav_thing])
+
+
+for things in dict_favthings:
+	print(f'{things}:{dict_favthings[things]}')
