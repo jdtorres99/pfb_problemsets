@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 fav_dict = {'activity':'sketching','movie':'Iron Giant','organism':'bearded dragons'}
 for key in fav_dict:
-	print(key, fav_dict[key])
-key_in = input('Please select a key. Do not include spaces or quotes!')
+	print(key)
+key_in = input('Please select a key. Do not include quotes! ')
 print(fav_dict[key_in])
-val_switch = input('Please select what to replace this value with. Do not include spaces or quotes!')
+val_switch = input('Please select what to replace this value with. Do not include quotes! ')
 fav_dict[key_in] = val_switch
-print(fav_dict[key_in]) 
+print(fav_dict[key_in])
